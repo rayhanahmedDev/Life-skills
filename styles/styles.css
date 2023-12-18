@@ -18,7 +18,7 @@
     height: 42px;
 }
 
-.main-width{
+.main-width {
     width: 85%;
 }
 
@@ -81,6 +81,10 @@
 
 .bulletTwo {
     position: absolute;
+    right: 160px;
+}
+
+.bulletTwo img {
     right: 160px;
 }
 
@@ -346,14 +350,17 @@ hr {
 
 /* about section */
 .about-section {
-    width: 50%;
+    width: 60%;
 }
 
 .about-main-title {
+    color: #09202B;
     font-size: 28px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 34px;
+    line-height: normal;
     margin-left: 20px;
+    margin-bottom: 11px;
 }
 
 .btn-color {
@@ -367,10 +374,11 @@ hr {
 }
 
 .skill-section {
-    width: 30%;
+    width: 272px;
+    flex-shrink: 0;
     background: #614DD11A;
     padding: 40px;
-    height: 259px;
+    height: 180px;
     border-radius: 6px;
 }
 
@@ -384,6 +392,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 12px;
 }
 
 .about-main {
@@ -395,7 +404,7 @@ hr {
 }
 
 .about-border {
-    border-left: 4px solid tomato;
+    border-left: 4px solid #EB5757;
 }
 
 .border-des {
@@ -403,7 +412,8 @@ hr {
 }
 
 .border-btn {
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-top: 23px;
 }
 
 /* course section */
@@ -518,7 +528,6 @@ hr {
     right: 145px;
 }
 
-.bollet-2 img {}
 
 /* web footer section */
 .main-web-footer {
@@ -622,7 +631,7 @@ hr {
         height: 42px;
     }
 
-    .main-width{
+    .main-width {
         width: 100%;
     }
 
