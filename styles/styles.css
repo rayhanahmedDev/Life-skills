@@ -484,22 +484,21 @@ hr {
     margin-bottom: 40px;
 }
 
-.bollet-1{
+.bollet-1 {
     position: absolute;
     left: 150px;
 }
 
-.bollet-1 img{
+.bollet-1 img {
     padding-top: 320px;
 }
 
-.bollet-2{
+.bollet-2 {
     position: absolute;
     right: 145px;
 }
-.bollet-2 img{
-   
-}
+
+.bollet-2 img {}
 
 /* web footer section */
 .main-web-footer {
@@ -674,6 +673,15 @@ hr {
         padding-bottom: 40px;
     }
 
+    body {
+        /* max-width: 350px; */
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .banner-section {
         width: 300px;
         color: white;
@@ -735,6 +743,7 @@ hr {
         width: 100%;
         text-align: center;
         padding-top: 20px;
+        margin-top: 80px;
     }
 
     .skill-section {
