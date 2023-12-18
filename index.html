@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Skills</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- extra collapse style start -->
+    <style>
+        /* Style for the checkboxes */
+        .toggle {
+            display: none;
+        }
+
+        /* Style for the labels (triggers) */
+        .toggle-label {
+            cursor: pointer;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Style for the collapsible content */
+        .content {
+            display: none;
+            margin-left: 20px;
+            /* Adjust the margin to create nesting */
+        }
+
+        /* When the checkbox is checked, display the content */
+        .toggle:checked+.content {
+            display: block;
+        }
+    </style>
+    <!-- extra collapse style end -->
+</head>
+
+<body>
+    <header>
+        <section class="bg-container">
+            <section>
+                <div class="bollet">
+                    <img src="./image/bollet.png" alt="">
+                </div>
+                <div class="navber">
+                    <div class="main-image">
+                        <img src="./image/logo.png" alt="">
+                    </div>
+                    <!-- link section -->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="icon">
+                        <i class='bx bx-menu' id="menu-icon"></i>
+                        <i class='bx bx-x' id="close-icon"></i>
+                    </label>
+
+                    <nav class="links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Coaching</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <!-- The dropdown container -->
+                        <li class="dropdown">
+                            <!-- The dropdown button -->
+                            <img src="./image/author.png" alt="">
+                            <!-- The dropdown content -->
+                            <div class="dropdown-content">
+                              <a href="#">Profile</a>
+                              <a href="#">Settings</a>
+                              <a href="#">Logout</a>
+                            </div>
+                        </li>
+                        <button class="main-btn">Get Started</button>
+                    </nav>
+                </div>
+            </section>
+            <!-- banner section -->
+            <section class="banner-section">
+                <p>Home - course - Web development - Single course</p>
+                <h2 class="main-title">Complete Web Development Course</h2>
+                <h4 class="Abdullah">By Musab Abdullah </h4>
+                <p class="main-des">We are constantly taking the next step towards bringing a workplace culture from a
+                    real space, to a digital one. We are constantly taking the next step towards bringing a workplace
+                    culture from a real space, to a digital one. </p>
+                <div class="plane-img">
+                    <p>4.7
+                        <span><img src="./image/rating.png" alt=""></span>
+                        2.678 ratings
+                    </p>
+                    <img src="./image/plane.png" alt="">
+                </div>
+                <div class="rating">
+                    <button class="second-btn">Start Now</button>
+                    <p>3.567 Learners enrolled</p>
+                </div>
+                <div class="bulletTwo">
+                    <img src="./image/bollet.png" alt="">
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <!-- icon section -->
+        <section class="main-section main-padding">
+            <div class="main-icon-section">
+                <div class="icon-section">
+                    <div class="icon-img bg-section-green">
+                        <img src="./image/Google Analytics 1.png" alt="">
+                    </div>
+                    <div>
+                        <p class="icon-des">Skill Level</p>
+                        <h3 class="icon-title">Beginner</h3>
+                    </div>
+                </div>
+                <div class="icon-section">
+                    <div class="icon-img bg-section-blue">
+                        <img src="./image/Union.png" alt="">
+                    </div>
+                    <div>
+                        <p class="icon-des">Certificate of completion</p>
+                        <h3 class="icon-title">Included with paid plans</h3>
+                    </div>
+                </div>
+                <div class="icon-section">
+                    <div class="icon-img bg-section-red">
+                        <img src="./image/Vector (1).png" alt="">
+                    </div>
+                    <div>
+                        <p class="icon-des">Time to complete</p>
+                        <h3 class="icon-title">Approx. 9 hours</h3>
+                    </div>
+                </div>
+                <div class="icon-section">
+                    <div class="icon-img bg-section-red">
+                        <img src="./image/Google Analytics 4.png" alt="">
+                    </div>
+                    <div>
+                        <p class="icon-des">prerequisites</p>
+                        <h3 class="icon-title">None</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section class="about-skill-section main-padding">
+            <div class="about-main">
+                <div class="about-section">
+                    <div class="about-border">
+                        <h2 class="about-main-title">About this course</h2>
+                        <p class="main-des border-des">We are constantly taking the next step towards bringing a
+                            workplace culture
+                            from
+                            a real space, to a digital one. We are constantly taking the next step towards bringing a
+                            workplace culture from a real space, to a digital one. We are constantly taking the next
+                            step
+                            towards bringing a workplace culture from a real space, to a digital one. </p>
+                    </div>
+                    <button class="btn-color border-btn">See more about courses</button>
+                </div>
+                <div class="skill-section">
+                    <h2 class="main-skill-title">Skills you’ll gain</h2>
+                    <div class="skill-icon">
+                        <img src="./image/purple.png" alt="">
+                        <p class="main-des">Work with web development</p>
+                    </div>
+                    <div class="skill-icon">
+                        <img src="./image/orange.png" alt="">
+                        <p class="main-des">Create queries for tables</p>
+                    </div>
+                    <div class="skill-icon">
+                        <img src="./image/blue.png" alt="">
+                        <p class="main-des">Build Web Development Projects</p>
+                    </div>
+                    <div class="skill-icon">
+                        <img src="./image/green.png" alt="">
+                        <p class="main-des">Web Problem solving</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Course Curriculum -->
+        <section class="main-course-section main-padding">
+            <div>
+                <h2 class="main-skill-title course-title">Course Curriculum</h2>
+                <div class="course-icon-link">
+                    <div class="course-section-icon">
+                        <div class="skill-icon">
+                            <img src="./image/Rectangle 185 purple.png" alt="">
+                            <p class="main-des">1000+ Videos </p>
+                        </div>
+                        <div class="skill-icon">
+                            <img src="./image/Rectangle 198 green.png" alt="">
+                            <p class="main-des">6+ Assignment </p>
+                        </div>
+                        <div class="skill-icon">
+                            <img src="./image/Rectangle blue.png" alt="">
+                            <p class="main-des">100+ Quizzes</p>
+                        </div>
+                        <div class="skill-icon">
+                            <img src="./image/Rectangle red.png" alt="">
+                            <p class="main-des">200+ Problem solving</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="course-icon">
+                            <p class="main-des">Expand All Sections</p>
+                            <div>
+                                <img src="./image/cib_facebook-f.jpg" alt="">
+                                <img src="./image/akar-icons_linkedin-fill.jpg" alt="">
+                                <img src="./image/twiter.png" alt="">
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- collapse section -->
+                <div class="collapse-color">
+                    <ul class="according collapse-bg">
+                        <!-- list 1 -->
+                        <li>
+                            <p class="day-color">Day 1</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-1" class="toggle-label li-title">Introduction to Front-End
+                                        Engineer Career Path</label>
+                                    <p class="main-des">Welcome to the Front-End Engineer Career Path!</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-1" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-1-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-1-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-1-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-1-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-1-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-1-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 2 -->
+                        <li>
+                            <p class="day-color">Day 2</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-2" class="toggle-label li-title">Overview of Web
+                                        Development</label>
+                                    <p class="main-des">Be introduced to the field of front-end web development.</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-2" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-2-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-2-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-2-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-2-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-2-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-2-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 3 -->
+                        <li>
+                            <p class="day-color">Day 3</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-3" class="toggle-label li-title">Fundamentals of
+                                        HTML</label>
+                                    <p class="main-des">Learn to build a structure for a website using HTML.</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-3" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-3-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-3-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-3-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-3-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-3-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-3-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 4 -->
+                        <li>
+                            <p class="day-color">Day 4</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-4" class="toggle-label li-title">Semantic HTML</label>
+                                    <p class="main-des">Write clearer, more accessible HTML using Semantic HTML tags.
+                                    </p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-4" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-4-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-4-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-4-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-4-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-4-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-4-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 5 -->
+                        <li>
+                            <p class="day-color">Day 5</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-5" class="toggle-label li-title">Developing Websites
+                                        Locally</label>
+                                    <p class="main-des">Get acquainted with text editors and Chrome DevTools to develop
+                                        websites locally.</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-5" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-5-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-5-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-5-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-5-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-5-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-5-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 6 -->
+                        <li>
+                            <p class="day-color">Day 6</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-6" class="toggle-label li-title">Deploying Websites</label>
+                                    <p class="main-des">Learn how to deploy websites using GitHub Pages and the command
+                                        line.</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-6" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-6-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-6-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-6-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-6-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-6-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-6-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 7 -->
+                        <li>
+                            <p class="day-color">Day 7</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-7" class="toggle-label li-title">Improved Styling with
+                                        CSS</label>
+                                    <p class="main-des">Use intermediate-level CSS to customize styles and implement
+                                        navigation elements.</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-7" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-7-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-7-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-7-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-7-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-7-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-7-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+                        <!-- list 8 -->
+                        <li>
+                            <p class="day-color">Day 8</p>
+                            <!-- extra collapse start -->
+                            <div class="container mt-3">
+                                <h2>
+                                    <!-- Main Label linked to the main checkbox -->
+                                    <label for="main-toggle-8" class="toggle-label li-title">Fundamentals of Web
+                                        Design</label>
+                                    <p class="main-des">Explore best user interface (UI) design practices to implement
+                                        CSS.</p>
+                                </h2>
+                                <!-- Main Checkbox -->
+                                <input type="checkbox" id="main-toggle-8" class="toggle">
+                                <!-- Main Collapsible content -->
+                                <div class="content">
+                                    <div>
+                                        <h2 class="nested-b">
+                                            <!-- Nested Label linked to the first nested checkbox -->
+                                            <label for="nested-toggle-8-1"
+                                                class="toggle-label main-des ">CoreSkill</label>
+                                            <hr class="separator">
+                                        </h2>
+                                    </div>
+                                    <!-- First Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-8-1" class="toggle">
+                                    <!-- First Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>CoreSkill</p>
+                                    </div>
+                                    <!-- 2nd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-8-2" class="toggle-label main-des">Problem
+                                            Solving</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- Second Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-8-2" class="toggle">
+                                    <!-- Second Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Problem Solving</p>
+                                    </div>
+                                    <!-- 3rd nested -->
+                                    <h3 class="nested-b">
+                                        <label for="nested-toggle-8-3"
+                                            class="toggle-label main-des">Communication</label>
+                                        <hr class="separator">
+                                    </h3>
+                                    <!-- third Nested Checkbox -->
+                                    <input type="checkbox" id="nested-toggle-8-3" class="toggle">
+                                    <!-- third Nested Collapsible content -->
+                                    <div class="content">
+                                        <p>Communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- extra collapse end -->
+                        </li>
+                        <hr>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- About the author -->
+        <section class="main-padding">
+            <div class="main-author-section">
+                <h2 class="main-skill-title">About the author</h2>
+                <div class="author-container">
+                    <img src="./image/author.png" alt="">
+                    <h2 class="musab-abdullah">Musab Abdullah </h2>
+                </div>
+                <p class="main-des">We are constantly taking the next step towards bringing a workplace culture from a
+                    real space, to a digital one. We are constantly taking the next step towards bringing a workplace
+                    culture from a real space, to a digital one. We are constantly taking the next step towards bringing
+                    a workplace culture from a real space, to a digital one. We are constantly taking the next step
+                    towards bringing a workplace culture from a real space, to a digital one. </p>
+                <button class="btn-color">See more courses by Musab Abdullah</button>
+            </div>
+        </section>
+        <!-- REVIEWS FORM LEARNERS -->
+        <section class="review-form-section">
+            <div class="title-section">
+                <h2 class="about-main-title">REVIEWS FORM LEARNERS</h2>
+                <p class="main-des"> We are constantly taking the next step towards bringing a workplace culture from a
+                    real space, to a digital one. </p>
+            </div>
+            <div class="bollet-1">
+                <img src="./image/bullet22.png" alt="">
+            </div>
+            <div class="bollet-2">
+                <img src="./image/bullet22.png" alt="">
+            </div>
+            <div class="main-padding review-card-section">
+                
+                <div class="review-cards">
+                    <img src="./image/review3.png" alt="">
+                    <h3 class="review-title">MELISSA GROTE</h3>
+                    <p class="main-des">USA 3Life skills learner </p>
+                    <img src="./image/rating.png" alt="">
+                    <p class="main-des"> communication solutions to increase employee engagement, build company culture,
+                        and provide a means of communication for all employees.</p>
+                </div>
+                <div class="review-cards">
+                    <img src="./image/review2.png" alt="">
+                    <h3 class="review-title">MELISSA GROTE</h3>
+                    <p class="main-des">USA 3Life skills learner </p>
+                    <img src="./image/rating.png" alt="">
+                    <p class="main-des"> communication solutions to increase employee engagement, build company culture,
+                        and provide a means of communication for all employees.</p>
+                </div>
+                <div class="review-cards">
+                    <img src="./image/review1.png" alt="">
+                    <h3 class="review-title">MELISSA GROTE</h3>
+                    <p class="main-des">USA 3Life skills learner </p>
+                    <img src="./image/rating.png" alt="">
+                    <p class="main-des"> communication solutions to increase employee engagement, build company culture,
+                        and provide a means of communication for all employees.</p>
+                </div>
+            </div>
+            
+        </section>
+        <!-- our learners work at -->
+        <section class="learn-work-padding">
+            <div>
+                <h2 class="about-main-title title-section">Our learners work at</h2>
+            </div>
+            <div class="learn-img">
+                <img src="./image/clip 11.png" alt="">
+                <img src="./image/Clip path group (1).png" alt="">
+                <img src="./image/Clip path group (10).png" alt="">
+                <img src="./image/Clip path group (2).png" alt="">
+                <img src="./image/Clip path group (3).png" alt="">
+                <img src="./image/Clip path group (4).png" alt="">
+                <img src="./image/Clip path group (6).png" alt="">
+                <img src="./image/Clip path group (5).png" alt="">
+                <img src="./image/Clip path group (7).png" alt="">
+                <img src="./image/Clip path group (9).png" alt="">
+                <img src="./image/Clip path group (8).png" alt="">
+                <img src="./image/Clip path group.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- web development -->
+        <section class="main-web-footer">
+            <div class="main-img-web-section main-padding">
+                <div class="web-main-section">
+                    <h2 class="web-title">Join over 10k learners and start learn web development today</h2>
+                    <p class="main-des">We are constantly taking the next step towards bringing a workplace culture from
+                        a real space, to a digital one. </p>
+                    <button class="main-btn">Start Now</button>
+                </div>
+                <img src="./image/client.png" alt="">
+            </div>
+        </section>
+        <section class="three-skills-section">
+            <div class="main-padding">
+                <div class="footer-links">
+                    <div class="first-footer">
+                        <div class="main-image">
+                            <img src="./image/logo.png" alt="">
+                        </div>
+                        <p class="main-des des-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio beatae
+                            consectetur molestias unde ullam sequi magnam, adipisci dignissimos? Eaque ipsam asperiores
+                            excepturi, eius explicabo cum. Unde, enim. Id, consequatur similique?</p>
+                    </div>
+                    <div>
+                        <h2 class="musab-abdullah">Company</h2>
+                        <div class="main-des linking des-color">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Courses</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="musab-abdullah">Resources</h2>
+                        <div class="main-des linking des-color">
+                            <li><a href="">Career Services</a></li>
+                            <li><a href="">Student Success</a></li>
+                            <li><a href="">Data Analyst</a></li>
+                            <li><a href="">Intro to Programming</a></li>
+                            <li><a href="">Digital Marketing</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="musab-abdullah">Follow social media</h2>
+                        <div class="footer-icon-img">
+                            <a href="">
+                                <span><i class="fa-brands fa-twitter"></i></span>
+                                <span><i class="fa-brands fa-facebook" ></i></span>
+                                <span><i class="fa-brands fa-instagram" ></i></span>
+                                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copy-right">
+            <p><small><span class="des-color">All rights reserved © 2023</span> <span class="right-color">3lifeskills.com</span></small></p>
+        </section>
+    </footer>
+</body>
+
+</html>
