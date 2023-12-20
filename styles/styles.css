@@ -439,6 +439,7 @@ label::before {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-top: 12px;
 }
 
 .course-icon img {
@@ -450,8 +451,10 @@ label::before {
     margin-right: 10px;
 }
 
+
 .course-icon-link {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 34px;
 }
@@ -1029,5 +1032,22 @@ label::before {
     }
     .bollet-2{
         right: 10px;
+    }
+
+    .about-main{
+        margin-top: 70px;
+    }
+
+    .about-section {
+        width: 500px;
+    }
+
+    .main-author-section {
+        margin-top: 90px;
+        max-width: 709px;
+    }
+
+    .learn-work-padding {
+        padding: 20px 50px 0px 50px;
     }
 }
