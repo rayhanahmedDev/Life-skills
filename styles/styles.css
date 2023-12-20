@@ -44,6 +44,10 @@
     margin-right: 20px;
 }
 
+.dropdown img{
+    cursor: pointer;
+}
+
 /* Style for the dropdown content */
 .dropdown-content {
     display: none;
@@ -52,6 +56,7 @@
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    margin-top: 30px;
 }
 
 /* Style for the dropdown items */
@@ -60,6 +65,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    margin-right: 0;
 }
 
 /* Change color on hover */
@@ -67,11 +73,7 @@
     background-color: #003CA7;
 }
 
-/* Show the dropdown content when hovering over the dropdown button */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
+.show {display: block;}
 /* profile menu end */
 
 .bollet {
@@ -101,8 +103,11 @@
 
 .links a {
     color: white;
-    margin-right: 25px;
     text-decoration-line: none;
+}
+
+.ankor-mg{
+    margin-right: 25px;
 }
 
 body {
@@ -647,7 +652,7 @@ label::before {
 
 
 /* responsive for mobile device */
-@media screen and (min-width: 350px) and (max-width: 976px) {
+@media screen and (min-width: 350px) and (max-width: 992px) {
     .navber {
         display: flex;
         gap: 50px;
@@ -962,5 +967,67 @@ label::before {
 
     .footer-links {
         flex-wrap: wrap;
+    }
+}
+
+/*  responsive for medium device  */
+@media screen and (min-width: 992px) and (max-width: 1024px){
+    .banner-section {
+        width: 876px;
+        color: white;
+        padding: 85px 0px 0px 50px;
+    }
+
+    .navber {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 20px 50px 0px 50px;
+    }
+
+    header {
+        background: #614DD1;
+        height: 100%;
+        /* border-radius: 0 0 100% 100%/0 0 70% 70%; */
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        color: white;
+        padding-bottom: 180px;
+    }
+
+    .main-icon-section {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #FFFFFF;
+        margin-top: -120px;
+        position: relative;
+        height: 108px;
+        border-radius: 6px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    .main-padding {
+        padding: 20px 50px 0px 50px;
+    }
+
+    .bulletTwo {
+        right: 100px;
+    }
+
+    .review-cards {
+        text-align: center;
+        width: 240px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        padding: 30px;
+    }
+
+    .bollet-1{
+        left: 10px;
+    }
+    .bollet-2{
+        right: 10px;
     }
 }

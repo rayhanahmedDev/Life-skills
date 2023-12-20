@@ -63,18 +63,18 @@
                     </label>
 
                     <nav class="links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Coaching</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a class="ankor-mg" href="#">Home</a></li>
+                        <li><a class="ankor-mg" href="#">About Us</a></li>
+                        <li><a class="ankor-mg" href="#">Team</a></li>
+                        <li><a class="ankor-mg" href="#">Contact</a></li>
+                        <li><a class="ankor-mg" href="#">Coaching</a></li>
+                        <li><a class="ankor-mg" href="#">FAQ</a></li>
                         <!-- The dropdown container -->
                         <li class="dropdown">
                             <!-- The dropdown button -->
-                            <img src="./image/author.png" alt="">
+                            <img  onclick="myFunction()" class="dropbtn" src="./image/author.png" alt="">
                             <!-- The dropdown content -->
-                            <div class="dropdown-content">
+                            <div class="dropdown-content" id="myDropdown">
                                 <a href="#">Profile</a>
                                 <a href="#">Settings</a>
                                 <a href="#">Logout</a>
@@ -849,6 +849,7 @@
                         class="right-color">3lifeskills.com</span></small></p>
         </section>
     </footer>
+    <script src="./dropdown.js">
+    </script>
 </body>
-
 </html>
