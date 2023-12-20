@@ -19,7 +19,7 @@
 }
 
 .main-width {
-    width: 85%;
+    max-width: 700px;
 }
 
 /* menu section */
@@ -263,17 +263,17 @@ header {
 .according li {
     list-style: none;
     width: 100%;
-    margin: 20px;
-    padding-top: 5px;
 }
 
 .according {
-    padding-right: 50px;
-    padding-bottom: 50px;
+    padding-right: 62px;
+    padding-left: 62px;
+    padding-bottom: 62px;
 }
 
 .day-color {
     color: #EB5757;
+    padding-top: 42px;
 }
 
 /* 
@@ -332,21 +332,23 @@ label::before {
     background-position-y: bottom;
 }
 
-hr {
-    margin-left: 30px;
-}
-
 /* nested collapse start */
 .nested-b {
     display: flex;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .separator {
     flex-grow: 1;
     margin-right: 30px;
+    margin-left: 30px;
 }
 
+.hr-margin{
+    margin-top: 25px;
+}
 
 /* about section */
 .about-section {
@@ -359,8 +361,7 @@ hr {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 20px;
-    margin-bottom: 11px;
+    margin-bottom: 17px;
 }
 
 .btn-color {
@@ -371,6 +372,7 @@ hr {
     font-weight: 500;
     line-height: 18px;
     padding: 0px;
+    margin-top: 19px;
 }
 
 .skill-section {
@@ -386,6 +388,7 @@ hr {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
+    margin-bottom: 22px;
 }
 
 .skill-icon {
@@ -444,12 +447,13 @@ hr {
 .course-icon-link {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 34px;
 }
 
 /* author section */
 .main-author-section {
     margin-top: 90px;
-    max-width: 70%;
+    max-width: 830px;
 }
 
 /* about author section */
@@ -463,24 +467,33 @@ hr {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 9px;
 }
 
 /* review form */
 .review-form-section {
     margin-top: 90px;
     background: #EFF2FA;
-    min-height: 654px;
+    height: 100%;
+    padding-bottom: 100px;
 }
 
 .title-section {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 91px;
 }
 
 .review-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+
+.rating-img{
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .review-cards {
@@ -520,7 +533,8 @@ hr {
 }
 
 .bollet-1 img {
-    padding-top: 320px;
+    padding-top: 310px;
+    display: block;
 }
 
 .bollet-2 {
@@ -853,6 +867,8 @@ hr {
     .review-cards {
         text-align: center;
         width: 270px;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 10px;
         background: #FFFFFF;
         padding: 30px;
@@ -862,10 +878,19 @@ hr {
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 24px;
+        margin-top: 40px;
     }
 
     .review-form-section {
         padding-bottom: 60px;
+        padding-top: 50px;
+    }
+
+    .bollet-2 img {
+        visibility: hidden;
+    }
+    .bollet-1 img {
+        visibility: hidden;
     }
 
     .title-section {
