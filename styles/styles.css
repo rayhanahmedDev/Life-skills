@@ -239,6 +239,7 @@ header {
     margin-top: -128px;
     position: relative;
     height: 109px;
+    max-width: 1170px;
     border-radius: 6px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
@@ -346,7 +347,7 @@ label::before {
     margin-left: 30px;
 }
 
-.hr-margin{
+.hr-margin {
     margin-top: 25px;
 }
 
@@ -492,7 +493,7 @@ label::before {
     margin-bottom: 10px;
 }
 
-.rating-img{
+.rating-img {
     margin-bottom: 10px;
     margin-top: 5px;
 }
@@ -567,7 +568,7 @@ label::before {
     margin-bottom: 11px;
 }
 
-.web-des{
+.web-des {
     margin-top: 28px;
 }
 
@@ -582,7 +583,7 @@ label::before {
     background-color: #1E2431;
     border-radius: 100% 100% 0 0/70% 70% 0 0;
     color: white;
-    margin-top: -140px;
+    margin-top: -150px;
     position: relative;
     padding-top: 97px;
     padding-bottom: 30px;
@@ -626,11 +627,11 @@ label::before {
 
 }
 
-.logo-img{
+.logo-img {
     margin-bottom: 31px;
 }
 
-.link-bottom{
+.link-bottom {
     margin-bottom: 19px;
 }
 
@@ -691,7 +692,8 @@ label::before {
         top: 27px;
         left: 0px;
         border-radius: 40px;
-        border: none
+        border: none;
+        cursor: pointer;
     }
 
     .links a {
@@ -905,6 +907,7 @@ label::before {
     .bollet-2 img {
         visibility: hidden;
     }
+
     .bollet-1 img {
         visibility: hidden;
     }
@@ -937,7 +940,7 @@ label::before {
         padding-bottom: 20px;
     }
 
-    .link-bottom{
+    .link-bottom {
         margin-top: 19px;
     }
 
