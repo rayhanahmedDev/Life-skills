@@ -568,7 +568,7 @@ label::before {
 }
 
 .web-des{
-    margin-bottom: 28px;
+    margin-top: 28px;
 }
 
 .main-img-web-section {
@@ -579,12 +579,12 @@ label::before {
 /* 3 skills section */
 .three-skills-section {
     height: 100%;
-    background-color: black;
+    background-color: #1E2431;
     border-radius: 100% 100% 0 0/70% 70% 0 0;
     color: white;
     margin-top: -140px;
     position: relative;
-    padding-top: 60px;
+    padding-top: 97px;
     padding-bottom: 30px;
 }
 
@@ -626,8 +626,16 @@ label::before {
 
 }
 
+.logo-img{
+    margin-bottom: 31px;
+}
+
+.link-bottom{
+    margin-bottom: 19px;
+}
+
 .copy-right {
-    background: #000;
+    background: #1E2431;
     padding: 40px;
     color: white;
     text-align: center;
@@ -913,6 +921,8 @@ label::before {
     /* footer section */
     .main-img-web-section {
         flex-wrap: wrap;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     .main-img-web-section img {
@@ -927,11 +937,15 @@ label::before {
         padding-bottom: 20px;
     }
 
+    .link-bottom{
+        margin-top: 19px;
+    }
+
     /* 3 skills section */
     .three-skills-section {
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #1E2431;
         border-radius: 0% 0% 0 0/0% 0% 0 0;
         color: white;
         margin-top: -0px;
