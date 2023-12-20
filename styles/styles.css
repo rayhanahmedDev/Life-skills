@@ -362,6 +362,7 @@ label::before {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 17px;
+    margin-left: 20px;
 }
 
 .btn-color {
@@ -547,12 +548,13 @@ label::before {
 .main-web-footer {
     background: #614DD1;
     margin-top: 90px;
-    padding: 40px;
-    padding-bottom: 90px;
+    padding-top: 79px;
+    padding-bottom: 103px;
 }
 
 .web-main-section {
     color: white;
+    /* width: 795px; */
 }
 
 .web-title {
@@ -561,6 +563,11 @@ label::before {
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 11px;
+}
+
+.web-des{
+    margin-bottom: 28px;
 }
 
 .main-img-web-section {
