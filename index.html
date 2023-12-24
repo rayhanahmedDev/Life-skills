@@ -34,6 +34,12 @@
             display: block;
         }
 
+        .toggle:checked+.toggle-label::before {
+            content: '-';
+        }
+
+        /*  */
+
         .main-btn:hover,
         .second-btn:hover {
             background-color: aliceblue;
@@ -72,7 +78,7 @@
                         <!-- The dropdown container -->
                         <li class="dropdown">
                             <!-- The dropdown button -->
-                            <img  onclick="myFunction()" class="dropbtn" src="./image/author.png" alt="">
+                            <img onclick="myFunction()" class="dropbtn" src="./image/author.png" alt="">
                             <!-- The dropdown content -->
                             <div class="dropdown-content" id="myDropdown">
                                 <a href="#">Profile</a>
@@ -852,4 +858,5 @@
     <script src="./dropdown.js">
     </script>
 </body>
+
 </html>
