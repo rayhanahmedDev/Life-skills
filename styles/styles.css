@@ -84,9 +84,8 @@
 .bulletTwo {
     position: absolute;
     right: 160px;
-    bottom: 85px;
+    margin-top: 30px;
 }
-
 
 .main-image img {
     width: 91px;
@@ -980,7 +979,7 @@ label::before {
         border-bottom-left-radius: 30%;
         border-bottom-right-radius: 30%;
         color: white;
-        padding-bottom: 180px;
+        /* padding-bottom: 180px; */
     }
 
     .main-icon-section {
