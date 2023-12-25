@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <!-- extra collapse style start -->
     <style>
-        /* Style for the checkboxes */
         .toggle {
             display: none;
         }
@@ -26,19 +28,12 @@
         /* Style for the collapsible content */
         .content {
             display: none;
-            /* Adjust the margin to create nesting */
         }
 
         /* When the checkbox is checked, display the content */
         .toggle:checked+.content {
             display: block;
         }
-
-        .toggle:checked+.toggle-label::before {
-            content: '-';
-        }
-
-        /*  */
 
         .main-btn:hover,
         .second-btn:hover {
@@ -238,10 +233,10 @@
                 <div class="collapse-color">
                     <ul class="according collapse-bg">
                         <!-- list 1 -->
-                        <li>
+                        <li class="accordion">
                             <p class="day-color">Day 1</p>
                             <!-- extra collapse start -->
-                            <div class="container mt-3">
+                            <div class="contentBx mt-3">
                                 <h2>
                                     <!-- Main Label linked to the main checkbox -->
                                     <label for="main-toggle-1" class="toggle-label li-title">Introduction to Front-End
@@ -741,6 +736,7 @@
             <div class="bollet-2">
                 <img src="./image/bullet22.png" alt="">
             </div>
+            <!-- card section -->
             <div class="main-padding review-card-section">
 
                 <div class="review-cards">
@@ -768,7 +764,6 @@
                         and provide a means of communication for all employees.</p>
                 </div>
             </div>
-
         </section>
         <!-- our learners work at -->
         <section class="learn-work-padding">
@@ -857,6 +852,9 @@
     </footer>
     <script src="./dropdown.js">
     </script>
-</body>
 
+    
+</body>
+    <!-- swiper slider js -->
+    <script src="./js/swiper-bundle.min.js"></script>
 </html>
