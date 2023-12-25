@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- swiper slider -->
-    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <!-- extra collapse style start -->
     <style>
         .toggle {
@@ -68,7 +65,18 @@
                         <li><a class="ankor-mg" href="#">About Us</a></li>
                         <li><a class="ankor-mg" href="#">Team</a></li>
                         <li><a class="ankor-mg" href="#">Contact</a></li>
-                        <li><a class="ankor-mg" href="#">Coaching</a></li>
+                        <li class="dropdown">
+                            <!-- The dropdown button -->
+                            <p onclick="myFunctionTwo()" class="dropbtn">
+                                Coaching
+                            </p>
+                            <!-- The dropdown content -->
+                            <div class="dropdown-content" id="coaching-drop">
+                                <a href="#">Fill-up</a>
+                                <a href="#">Settings</a>
+                            </div>
+                        </li>
+
                         <li><a class="ankor-mg" href="#">FAQ</a></li>
                         <!-- The dropdown container -->
                         <li class="dropdown">
@@ -738,31 +746,33 @@
             </div>
             <!-- card section -->
             <div class="main-padding review-card-section">
-
-                <div class="review-cards">
-                    <img src="./image/review3.png" alt="">
-                    <h3 class="review-title">MELISSA GROTE</h3>
-                    <p class="main-des">USA 3Life skills learner </p>
-                    <img class="rating-img" src="./image/rating.png" alt="">
-                    <p class="main-des"> communication solutions to increase employee engagement, build company culture,
-                        and provide a means of communication for all employees.</p>
-                </div>
-                <div class="review-cards">
-                    <img src="./image/review2.png" alt="">
-                    <h3 class="review-title">MELISSA GROTE</h3>
-                    <p class="main-des">USA 3Life skills learner </p>
-                    <img class="rating-img" src="./image/rating.png" alt="">
-                    <p class="main-des"> communication solutions to increase employee engagement, build company culture,
-                        and provide a means of communication for all employees.</p>
-                </div>
-                <div class="review-cards">
-                    <img src="./image/review1.png" alt="">
-                    <h3 class="review-title">MELISSA GROTE</h3>
-                    <p class="main-des">USA 3Life skills learner </p>
-                    <img class="rating-img" src="./image/rating.png" alt="">
-                    <p class="main-des"> communication solutions to increase employee engagement, build company culture,
-                        and provide a means of communication for all employees.</p>
-                </div>
+                    <div class="review-cards">
+                        <img src="./image/review3.png" alt="">
+                        <h3 class="review-title">MELISSA GROTE</h3>
+                        <p class="main-des">USA 3Life skills learner </p>
+                        <img class="rating-img" src="./image/rating.png" alt="">
+                        <p class="main-des"> communication solutions to increase employee engagement, build company
+                            culture,
+                            and provide a means of communication for all employees.</p>
+                    </div>
+                    <div class="review-cards">
+                        <img src="./image/review2.png" alt="">
+                        <h3 class="review-title">MELISSA GROTE</h3>
+                        <p class="main-des">USA 3Life skills learner </p>
+                        <img class="rating-img" src="./image/rating.png" alt="">
+                        <p class="main-des"> communication solutions to increase employee engagement, build company
+                            culture,
+                            and provide a means of communication for all employees.</p>
+                    </div>
+                    <div class="review-cards">
+                        <img src="./image/review1.png" alt="">
+                        <h3 class="review-title">MELISSA GROTE</h3>
+                        <p class="main-des">USA 3Life skills learner </p>
+                        <img class="rating-img" src="./image/rating.png" alt="">
+                        <p class="main-des"> communication solutions to increase employee engagement, build company
+                            culture,
+                            and provide a means of communication for all employees.</p>
+                    </div>
             </div>
         </section>
         <!-- our learners work at -->
@@ -794,7 +804,7 @@
                     <h2 class="web-title">Join over 10k learners and start learn web development today</h2>
                     <p class="main-des">We are constantly taking the next step towards bringing a workplace culture from
                         a real <br> space, to a digital one. </p>
-                    <button class="main-btn web-des">Start Now</button>
+                    <button class="second-btn web-des">Start Now</button>
                 </div>
                 <img src="./image/client.png" alt="">
             </div>
@@ -852,9 +862,5 @@
     </footer>
     <script src="./dropdown.js">
     </script>
-
-    
 </body>
-    <!-- swiper slider js -->
-    <script src="./js/swiper-bundle.min.js"></script>
 </html>

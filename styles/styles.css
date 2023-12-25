@@ -107,6 +107,14 @@
     margin-right: 25px;
 }
 
+body{
+    position: relative;
+    height: 100%;
+}
+
+/* slider section start */
+/* slider section end */
+
 body {
     max-width: 100%;
     margin-right: auto;
@@ -183,7 +191,7 @@ header {
 .second-btn {
     color: white;
     background-color: #EB5757;
-    width: 134px;
+    width: 174px;
     height: 40px;
     top: 27px;
     left: 1411px;
@@ -494,72 +502,6 @@ header {
 
 /* extra card section */
 
-.slider-container{
-    max-width: 1120px;
-    width: 100%;
-    background: gray;
-    padding: 40px 0;
-}
-
-.slider-content{
-    margin: 0 40px;
-
-}
-
-.card{
-    border-radius: 25px;
-    background: #fff;
-}
-
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-}
-
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.image-content, .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content{
-    row-gap: 5px;
-    position: relative;
-    padding: 25px 0;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #407040;
-}
-
-.overlay::before, .overlay::after{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #407040;
-}
-
-.overlay::after{
-    border-radius: 0 25px 0 0 ;
-    background-color: #fff;
-}
-
 /* review section end */
 
 .learn-work-padding {
@@ -730,9 +672,19 @@ header {
         display: none;
     }
 
-    .main-btn,
-    .second-btn {
+    .main-btn{
         width: 50%;
+        margin-top: 10px;
+        margin-left: 0px;
+        height: 40px;
+        top: 27px;
+        left: 0px;
+        border-radius: 40px;
+        border: none;
+        cursor: pointer;
+    }
+    .second-btn {
+        width: 74%;
         margin-top: 10px;
         margin-left: 0px;
         height: 40px;
@@ -759,12 +711,12 @@ header {
         width: 100%;
         height: 0;
         background: #614DD1;
-        transition: .3s ease;
+        transition: .5s ease;
         overflow: hidden;
     }
 
     #check:checked~.links {
-        min-height: 30rem;
+        min-height: 32rem;
     }
 
     /* drop down profile */
@@ -991,7 +943,7 @@ header {
 
     /* footer section */
     .main-img-web-section {
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
         padding-top: 70px;
         padding-bottom: 70px;
     }
@@ -999,6 +951,7 @@ header {
     .main-img-web-section img {
         padding-top: 40px;
         padding-left: 50px;
+        margin-bottom: 40px;
     }
 
     .main-web-footer {
