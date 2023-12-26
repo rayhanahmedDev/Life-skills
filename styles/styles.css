@@ -502,10 +502,7 @@ header {
 
 /* extra card section start*/
 .wrapper{
-    max-width: 1140px;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     position: relative;
 }
@@ -1019,10 +1016,6 @@ header {
         border-radius: 10px;
         background: #FFFFFF;
         padding: 30px;
-    }
-
-    .carousel{
-        margin-left: 30px;
     }
 
     .review-form-section {
