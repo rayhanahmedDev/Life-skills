@@ -107,16 +107,11 @@
     margin-right: 25px;
 }
 
-body{
-    position: relative;
-    height: 100%;
-}
-
 /* slider section start */
 /* slider section end */
 
 body {
-    max-width: 100%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -606,17 +601,6 @@ header {
     font-size: 1.31rem;
 }
 
-@media screen and (max-width : 900px) {
-    .wrapper .carousel {
-        grid-auto-columns: calc((100% / 2) - 12px);
-    }
-}
-@media screen and (max-width : 600px) {
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
-    }
-}
-
 /* extra card section end*/
 
 /* review section end */
@@ -1021,6 +1005,8 @@ header {
         padding: 30px;
     }
 
+   
+
     .review-form-section {
         padding-bottom: 60px;
         padding-top: 50px;
@@ -1031,7 +1017,7 @@ header {
     }
 
     .wrapper i:last-child {
-        right: -0px;
+        right: -22px;
     }
 
     .wrapper i:first-child {
@@ -1107,7 +1093,8 @@ header {
 /*  responsive for medium device  */
 @media screen and (min-width: 992px) and (max-width: 1024px){
     .banner-section {
-        width: 876px;
+        max-width: 876px;
+        width: 100%;
         color: white;
         padding: 85px 0px 0px 50px;
     }
@@ -1142,7 +1129,11 @@ header {
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     }
 
-    .main-padding {
+    .main-padding{
+        padding: 20px 50px 0px 50px;
+    }
+
+    .slider-padding {
         padding: 20px 50px 0px 50px;
     }
 
@@ -1150,12 +1141,18 @@ header {
         right: 100px;
     }
 
-    .review-cards {
+    .carousel .card {
         text-align: center;
         width: 240px;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 10px;
         background: #FFFFFF;
         padding: 30px;
+    }
+
+    .wrapper i:last-child {
+        right: -20px;
     }
 
     .bollet-1{
@@ -1180,5 +1177,20 @@ header {
 
     .learn-work-padding {
         padding: 20px 50px 0px 50px;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 12px);
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 12px);
+    }
+}
+@media screen and (max-width : 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
     }
 }
