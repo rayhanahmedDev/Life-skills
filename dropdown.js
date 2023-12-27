@@ -28,3 +28,12 @@ faqs.forEach((faq) => {
         faq.classList.toggle('active')
     })
 })
+
+// nested collapse
+const nested = document.querySelectorAll(".nested-b")
+
+nested.forEach((nest) => {
+    nest.addEventListener('click', () => {
+        nest.classList.toggle('active')
+    })
+})

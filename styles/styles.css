@@ -283,6 +283,10 @@ header {
 svg{
     transition: transform .5s ease-in;
 }
+
+.nested-b.active svg{
+    transform: rotate(180deg);
+}
 /* arrow section end */
 /* collapse-color */
 .collapse-color {
