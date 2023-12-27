@@ -513,7 +513,7 @@ header {
     top: 50%;
     font-size: 1.23rem;
     transform: translateY(-50%);
-    box-shadow: 0 3px 6px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .wrapper i:first-child{
@@ -745,7 +745,7 @@ header {
         align-items: center;
         text-align: center;
         justify-content: space-between;
-        padding: 10px 20px 0px 20px;
+        padding: 10px 20px 0px 15px;
     }
 
     .home-course {
@@ -1140,6 +1140,19 @@ header {
 
     .bulletTwo {
         right: 100px;
+    }
+
+    .bollet-1{
+        left: 0;
+    }
+
+    .review-form-section{
+        padding-bottom: 50px;
+    }
+
+    .bollet-1 img {
+        padding-top: 360px;
+        display: block;
     }
 
     .carousel .card {
