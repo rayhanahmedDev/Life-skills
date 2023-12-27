@@ -1,4 +1,4 @@
-body{
+/* body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,4 +51,52 @@ body{
 .accordion .contentBx.active .content{
     height: 150px;
     padding: 20px;
+} */
+
+/* 2nd collapse section start */
+
+body{
+    background: gainsboro;
 }
+
+section{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform .5s ease-in;
+}
+/* 2nd collapse section end */

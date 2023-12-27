@@ -269,6 +269,21 @@ header {
 
 /* collapse section start */
 
+/* arrow section start */
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform .5s ease-in;
+}
+/* arrow section end */
 /* collapse-color */
 .collapse-color {
     background: linear-gradient(270deg, #E5EEFD 4.15%, rgba(229, 238, 253, 0) 137.71%);
@@ -297,6 +312,7 @@ header {
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
+    width: 100%;
 }
 
 .collapse-bg {
@@ -476,14 +492,6 @@ header {
 .rating-img {
     margin-bottom: 10px;
     margin-top: 5px;
-}
-
-.review-cards {
-    text-align: center;
-    width: 300px;
-    border-radius: 10px;
-    background: #FFFFFF;
-    padding: 30px;
 }
 
 .review-card-section {

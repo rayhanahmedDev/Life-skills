@@ -20,11 +20,11 @@ window.onclick = function (event) {
     }
 }
 
-// 
-const accordion = document.getElementsByClassName('contentBx');
+// 2nd collpase section
+const faqs = document.querySelectorAll(".question")
 
-      for(i = 0; i < accordion.length; i++){
-        accordion[i].addEventListener('click', function(){
-          this.classList.toggle('active')
-        })
-      }
+faqs.forEach((faq) => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active')
+    })
+})
