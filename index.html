@@ -27,6 +27,11 @@
             display: none;
         }
 
+        /* main collapse section */
+        .contentBx.active .content {
+            display: block;
+        }
+
         /* When the checkbox is checked, display the content */
         .toggle:checked+.content {
             display: block;
@@ -49,7 +54,7 @@
                 <div class="bollet">
                     <img src="./image/bollet.png" alt="">
                 </div>
-                <div class="navber">
+                <div id="navber">
                     <div class="main-image">
                         <img src="./image/logo.png" alt="">
                     </div>
@@ -67,7 +72,7 @@
                         <li><a class="ankor-mg" href="#">Contact</a></li>
                         <li class="dropdown">
                             <!-- The dropdown button -->
-                            <p onclick="myFunctionTwo()" class="dropbtn">
+                            <p onclick="myFunctionTwo()" class="dropbtn coaching-b">
                                 Coaching
                             </p>
                             <!-- The dropdown content -->
@@ -108,7 +113,7 @@
                             <img src="./image/rating.png" alt=""></span>
                         2.678 ratings
                     </p>
-                    <img src="./image/plane.png" alt="">
+                    <img src="./image/plane2.svg" alt="">
                 </div>
                 <div class="rating">
                     <button class="second-btn">Start Now</button>
@@ -227,7 +232,7 @@
                     </div>
                     <div>
                         <span class="course-icon">
-                            <p class="main-des">Expand All Sections</p>
+                            <p id="expand-all" class="main-des expand-cursor">Expand All Sections</p>
                             <div>
                                 <img src="./image/cib_facebook-f.jpg" alt="">
                                 <img src="./image/akar-icons_linkedin-fill.jpg" alt="">
@@ -247,7 +252,7 @@
                             <div class="contentBx mt-3">
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
-                                    <div class="question">
+                                    <div class="question" id="question">
                                         <label for="main-toggle-1" class="toggle-label li-title">Introduction to
                                             Front-End Engineer Career Path</label>
                                         <!-- svg -->
@@ -260,7 +265,7 @@
                                     <p class="main-des">Welcome to the Front-End Engineer Career Path!</p>
                                     </h2>
                                     <!-- Main Checkbox -->
-                                    <input type="checkbox" id="main-toggle-1" class="toggle">
+                                    <!-- <input type="checkbox" id="main-toggle-1" class="toggle"> -->
                                     <!-- Main Collapsible content -->
                                     <div class="content">
                                         <div>
@@ -269,9 +274,11 @@
                                                 <label for="nested-toggle-1-1"
                                                     class="toggle-label main-des ">CoreSkill</label>
                                                 <hr class="separator">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                    <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                    </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                    viewBox="0 0 15 9" fill="none">
+                                                    <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1"
+                                                        stroke-width="2" />
+                                                </svg>
                                             </div>
                                         </div>
                                         <!-- First Nested Checkbox -->
@@ -285,9 +292,10 @@
                                             <label for="nested-toggle-1-2" class="toggle-label main-des">Problem
                                                 Solving</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                         <!-- Second Nested Checkbox -->
                                         <input type="checkbox" id="nested-toggle-1-2" class="toggle">
@@ -300,9 +308,10 @@
                                             <label for="nested-toggle-1-3"
                                                 class="toggle-label main-des">Communication</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                         <!-- third Nested Checkbox -->
                                         <input type="checkbox" id="nested-toggle-1-3" class="toggle">
@@ -323,72 +332,76 @@
                             <div class="container mt-3">
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
-                                        <div class="question">
-                                            <label for="main-toggle-2" class="toggle-label li-title">Overview of Web
-                                                Development</label>
-                                            <!-- svg -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
-                                                viewBox="0 0 448 512">
-                                                <path
-                                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                            </svg>
-                                        </div>
+                                    <div class="question">
+                                        <label for="main-toggle-2" class="toggle-label li-title">Overview of Web
+                                            Development</label>
+                                        <!-- svg -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                        </svg>
+                                    </div>
                                     <p class="main-des">Be introduced to the field of front-end web development.</p>
-                                </h2>
-                                <!-- Main Checkbox -->
-                                <input type="checkbox" id="main-toggle-2" class="toggle">
-                                <!-- Main Collapsible content -->
-                                <div class="content">
-                                    <div>
-                                        <div class="nested-b">
-                                            <!-- Nested Label linked to the first nested checkbox -->
-                                            <label for="nested-toggle-2-1"
-                                                class="toggle-label main-des ">CoreSkill</label>
-                                            <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
+                                    </h2>
+                                    <!-- Main Checkbox -->
+                                    <input type="checkbox" id="main-toggle-2" class="toggle">
+                                    <!-- Main Collapsible content -->
+                                    <div class="content">
+                                        <div>
+                                            <div class="nested-b">
+                                                <!-- Nested Label linked to the first nested checkbox -->
+                                                <label for="nested-toggle-2-1"
+                                                    class="toggle-label main-des ">CoreSkill</label>
+                                                <hr class="separator">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                    viewBox="0 0 15 9" fill="none">
+                                                    <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1"
+                                                        stroke-width="2" />
                                                 </svg>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- First Nested Checkbox -->
-                                    <input type="checkbox" id="nested-toggle-2-1" class="toggle">
-                                    <!-- First Nested Collapsible content -->
-                                    <div class="content">
-                                        <p>CoreSkill</p>
-                                    </div>
-                                    <!-- 2nd nested -->
-                                    <div class="nested-b">
-                                        <label for="nested-toggle-2-2" class="toggle-label main-des">Problem
-                                            Solving</label>
-                                        <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
+                                        <!-- First Nested Checkbox -->
+                                        <input type="checkbox" id="nested-toggle-2-1" class="toggle">
+                                        <!-- First Nested Collapsible content -->
+                                        <div class="content">
+                                            <p>CoreSkill</p>
+                                        </div>
+                                        <!-- 2nd nested -->
+                                        <div class="nested-b">
+                                            <label for="nested-toggle-2-2" class="toggle-label main-des">Problem
+                                                Solving</label>
+                                            <hr class="separator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
                                             </svg>
-                                    </div>
-                                    <!-- Second Nested Checkbox -->
-                                    <input type="checkbox" id="nested-toggle-2-2" class="toggle">
-                                    <!-- Second Nested Collapsible content -->
-                                    <div class="content">
-                                        <p>Problem Solving</p>
-                                    </div>
-                                    <!-- 3rd nested -->
-                                    <div class="nested-b">
-                                        <label for="nested-toggle-2-3"
-                                            class="toggle-label main-des">Communication</label>
-                                        <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
+                                        </div>
+                                        <!-- Second Nested Checkbox -->
+                                        <input type="checkbox" id="nested-toggle-2-2" class="toggle">
+                                        <!-- Second Nested Collapsible content -->
+                                        <div class="content">
+                                            <p>Problem Solving</p>
+                                        </div>
+                                        <!-- 3rd nested -->
+                                        <div class="nested-b">
+                                            <label for="nested-toggle-2-3"
+                                                class="toggle-label main-des">Communication</label>
+                                            <hr class="separator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
                                             </svg>
-                                    </div>
-                                    <!-- third Nested Checkbox -->
-                                    <input type="checkbox" id="nested-toggle-2-3" class="toggle">
-                                    <!-- third Nested Collapsible content -->
-                                    <div class="content">
-                                        <p>Communication</p>
+                                        </div>
+                                        <!-- third Nested Checkbox -->
+                                        <input type="checkbox" id="nested-toggle-2-3" class="toggle">
+                                        <!-- third Nested Collapsible content -->
+                                        <div class="content">
+                                            <p>Communication</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- extra collapse end -->
+                                <!-- extra collapse end -->
                         </li>
                         <hr class="hr-margin">
                         <!-- list 3 -->
@@ -398,16 +411,16 @@
                             <div class="container mt-3">
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
-                                        <div class="question">
-                                            <label for="main-toggle-3" class="toggle-label li-title">Fundamentals of
-                                                HTML</label>
-                                            <!-- svg -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
-                                                viewBox="0 0 448 512">
-                                                <path
-                                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                            </svg>
-                                        </div>
+                                    <div class="question">
+                                        <label for="main-toggle-3" class="toggle-label li-title">Fundamentals of
+                                            HTML</label>
+                                        <!-- svg -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                        </svg>
+                                    </div>
                                     <p class="main-des">Learn to build a structure for a website using HTML.</p>
                                 </div>
                                 <!-- Main Checkbox -->
@@ -420,9 +433,10 @@
                                             <label for="nested-toggle-3-1"
                                                 class="toggle-label main-des ">CoreSkill</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                     </div>
                                     <!-- First Nested Checkbox -->
@@ -436,9 +450,10 @@
                                         <label for="nested-toggle-3-2" class="toggle-label main-des">Problem
                                             Solving</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- Second Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-3-2" class="toggle">
@@ -451,9 +466,10 @@
                                         <label for="nested-toggle-3-3"
                                             class="toggle-label main-des">Communication</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- third Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-3-3" class="toggle">
@@ -495,9 +511,10 @@
                                             <label for="nested-toggle-4-1"
                                                 class="toggle-label main-des ">CoreSkill</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                     </div>
                                     <!-- First Nested Checkbox -->
@@ -511,9 +528,10 @@
                                         <label for="nested-toggle-4-2" class="toggle-label main-des">Problem
                                             Solving</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- Second Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-4-2" class="toggle">
@@ -526,9 +544,10 @@
                                         <label for="nested-toggle-4-3"
                                             class="toggle-label main-des">Communication</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- third Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-4-3" class="toggle">
@@ -548,16 +567,16 @@
                             <div class="container mt-3">
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
-                                        <div class="question">
-                                            <label for="main-toggle-5" class="toggle-label li-title">Developing Websites
-                                                Locally</label>
-                                            <!-- svg -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
-                                                viewBox="0 0 448 512">
-                                                <path
-                                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                            </svg>
-                                        </div>
+                                    <div class="question">
+                                        <label for="main-toggle-5" class="toggle-label li-title">Developing Websites
+                                            Locally</label>
+                                        <!-- svg -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                        </svg>
+                                    </div>
                                     <p class="main-des">Get acquainted with text editors and Chrome DevTools to develop
                                         websites locally.</p>
                                 </div>
@@ -571,9 +590,10 @@
                                             <label for="nested-toggle-5-1"
                                                 class="toggle-label main-des ">CoreSkill</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                     </div>
                                     <!-- First Nested Checkbox -->
@@ -587,9 +607,10 @@
                                         <label for="nested-toggle-5-2" class="toggle-label main-des">Problem
                                             Solving</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- Second Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-5-2" class="toggle">
@@ -602,9 +623,10 @@
                                         <label for="nested-toggle-5-3"
                                             class="toggle-label main-des">Communication</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- third Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-5-3" class="toggle">
@@ -625,7 +647,8 @@
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
                                     <div class="question">
-                                        <label for="main-toggle-6" class="toggle-label li-title">Deploying Websites</label>
+                                        <label for="main-toggle-6" class="toggle-label li-title">Deploying
+                                            Websites</label>
                                         <!-- svg -->
                                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
                                             viewBox="0 0 448 512">
@@ -646,9 +669,10 @@
                                             <label for="nested-toggle-6-1"
                                                 class="toggle-label main-des ">CoreSkill</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                     </div>
                                     <!-- First Nested Checkbox -->
@@ -662,9 +686,10 @@
                                         <label for="nested-toggle-6-2" class="toggle-label main-des">Problem
                                             Solving</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- Second Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-6-2" class="toggle">
@@ -677,9 +702,10 @@
                                         <label for="nested-toggle-6-3"
                                             class="toggle-label main-des">Communication</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- third Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-6-3" class="toggle">
@@ -699,16 +725,16 @@
                             <div class="container mt-3">
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
-                                        <div class="question">
-                                            <label for="main-toggle-7" class="toggle-label li-title">Improved Styling with
-                                                CSS</label>
-                                            <!-- svg -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
-                                                viewBox="0 0 448 512">
-                                                <path
-                                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                            </svg>
-                                        </div>
+                                    <div class="question">
+                                        <label for="main-toggle-7" class="toggle-label li-title">Improved Styling with
+                                            CSS</label>
+                                        <!-- svg -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                        </svg>
+                                    </div>
                                     <p class="main-des">Use intermediate-level CSS to customize styles and implement
                                         navigation elements.</p>
                                 </div>
@@ -722,9 +748,10 @@
                                             <label for="nested-toggle-7-1"
                                                 class="toggle-label main-des ">CoreSkill</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                     </div>
                                     <!-- First Nested Checkbox -->
@@ -738,9 +765,10 @@
                                         <label for="nested-toggle-7-2" class="toggle-label main-des">Problem
                                             Solving</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- Second Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-7-2" class="toggle">
@@ -753,9 +781,10 @@
                                         <label for="nested-toggle-7-3"
                                             class="toggle-label main-des">Communication</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- third Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-7-3" class="toggle">
@@ -775,16 +804,16 @@
                             <div class="container mt-3">
                                 <div>
                                     <!-- Main Label linked to the main checkbox -->
-                                        <div class="question">
-                                            <label for="main-toggle-8" class="toggle-label li-title">Fundamentals of Web
-                                                Design</label>
-                                            <!-- svg -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
-                                                viewBox="0 0 448 512">
-                                                <path
-                                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                            </svg>
-                                        </div>
+                                    <div class="question">
+                                        <label for="main-toggle-8" class="toggle-label li-title">Fundamentals of Web
+                                            Design</label>
+                                        <!-- svg -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                            viewBox="0 0 448 512">
+                                            <path
+                                                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                        </svg>
+                                    </div>
                                     <p class="main-des">Explore best user interface (UI) design practices to implement
                                         CSS.</p>
                                 </div>
@@ -798,9 +827,10 @@
                                             <label for="nested-toggle-8-1"
                                                 class="toggle-label main-des ">CoreSkill</label>
                                             <hr class="separator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9"
+                                                viewBox="0 0 15 9" fill="none">
+                                                <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                            </svg>
                                         </div>
                                     </div>
                                     <!-- First Nested Checkbox -->
@@ -814,9 +844,10 @@
                                         <label for="nested-toggle-8-2" class="toggle-label main-des">Problem
                                             Solving</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- Second Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-8-2" class="toggle">
@@ -829,9 +860,10 @@
                                         <label for="nested-toggle-8-3"
                                             class="toggle-label main-des">Communication</label>
                                         <hr class="separator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2"/>
-                                            </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
+                                            fill="none">
+                                            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+                                        </svg>
                                     </div>
                                     <!-- third Nested Checkbox -->
                                     <input type="checkbox" id="nested-toggle-8-3" class="toggle">
@@ -1010,6 +1042,21 @@
     </script>
     <!-- js section -->
     <script src="exam.js" defer></script>
+
+    <!-- scroll bar -->
+    <script>
+        var lastScrollTop = 0;
+        navber = document.getElementById('navber')
+        window.addEventListener('scroll', function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navber.style.top = '-80px'
+            } else {
+                navber.style.top = '0'
+            }
+            lastScrollTop = scrollTop
+        })
+    </script>
 </body>
 
 </html>

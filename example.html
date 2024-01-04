@@ -5,79 +5,183 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/example.css">
-  <title>Collapse</title>
+  <title>Nested</title>
 </head>
 
 <body>
-  <!-- <div class="accordion">
-    <div class="contentBx">
-      <div class="label">List one</div>
-      <div class="content">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi suscipit fugit unde voluptatum explicabo
-          reprehenderit nobis cumque numquam voluptatibus odit laborum esse eius soluta itaque enim officia temporibus,
-          nesciunt nihil?</p>
-      </div>
-    </div>
-    <div class="contentBx">
-      <div class="label">List Two</div>
-      <div class="content">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi suscipit fugit unde voluptatum explicabo
-          reprehenderit nobis cumque numquam voluptatibus odit laborum esse eius soluta itaque enim officia temporibus,
-          nesciunt nihil?</p>
-      </div>
-    </div>
-    <div class="contentBx">
-      <div class="label">List Three</div>
-      <div class="content">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi suscipit fugit unde voluptatum explicabo
-          reprehenderit nobis cumque numquam voluptatibus odit laborum esse eius soluta itaque enim officia temporibus,
-          nesciunt nihil?</p>
-      </div>
-    </div>
-    <div class="contentBx">
-      <div class="label">List Four</div>
-      <div class="content">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi suscipit fugit unde voluptatum explicabo
-          reprehenderit nobis cumque numquam voluptatibus odit laborum esse eius soluta itaque enim officia temporibus,
-          nesciunt nihil?</p>
-      </div>
-    </div>
-  </div> -->
+<div>
+    <h3 class="accordion">Section 1</h3>
+    <p>hello</p>
+    <div class="panel">
 
-  <!-- 2nd collapse section start -->
-  <section>
-      <h2 class="title">FAQ</h2>
-      <div class="faq">
-        <div class="question">
-          <h3>What is JavaScript ? </h3>
-
-          <!-- svg -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
-        </div>
-        <div class="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio, veritatis optio aperiam quas minima repudiandae consectetur deserunt dicta iure amet. Necessitatibus quaerat quam consectetur, nihil qui suscipit facilis commodi.
-          </p>
-        </div>
+      <h3 class="accordion">SubSection 1</h3>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
+          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
+          rem
+          magni perspiciatis dolorum?</p>
       </div>
-  </section>
-  <script>
-    const accordion = document.getElementsByClassName('contentBx');
+
+      <h3 class="accordion">SubSection 2</h3>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
+          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
+          rem
+          magni perspiciatis dolorum?</p>
+      </div>
+    </div>
+
+    <h3 class="accordion">Section 2</h3>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum itaque alias quasi! Quae eligendi
+        explicabo voluptatibus delectus voluptatem odit at nam, sequi quidem. Quaerat inventore quam commodi tenetur
+        ullam?</p>
+
+
+      <h3 class="accordion">SubSection 2</h3>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
+          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
+          rem
+          magni perspiciatis dolorum?</p>
+      </div>
+    </div>
+
+    
+    <h3 class="accordion">Section 3</h3>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum itaque alias quasi! Quae eligendi
+        explicabo voluptatibus delectus voluptatem odit at nam, sequi quidem. Quaerat inventore quam commodi tenetur
+        ullam?</p>
+
+      
+      <h3 class="accordion">SubSection 3</h3>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
+          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
+          rem
+          magni perspiciatis dolorum?</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- javascript section -->
+  <!-- <script>
+
+    let accordion = document.getElementsByClassName('accordion')
 
     for (i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener('click', function () {
         this.classList.toggle('active')
+        var panel = this.nextElementSibling;
+        if (panel.style.display === 'block') {
+          panel.style.display = 'none'
+        } else {
+          panel.style.display = 'block'
+        }
       })
     }
 
-    // 2nd collpase section
-    const faqs = document.querySelectorAll(".faq")
+
+    // function myFunction() {
+    //   var element = document.querySelector(".panel");
+    //   element.classList.toggle("active");
+    // }
+  </script> -->
+
+  <!-- extra section start -->
+
+  <section>
+    <h2 class="title">FAQ</h2>
+
+    <div class="father">
+      <!-- first faq -->
+      <div class="faq">
+        <div class="question">
+          <h3>What is javaScript ?</h3>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="answer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum, non fugiat obcaecati beatae modi
+            repudiandae voluptatem optio! Neque beatae aliquam dolor molestiae praesentium perspiciatis earum cumque
+            optio
+            ullam unde?</p>
+        </div>
+      </div>
+
+      <!-- second faq -->
+      <div class="faq">
+        <div class="question">
+          <h3>What is javaScript ?</h3>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="answer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum, non fugiat obcaecati beatae modi
+            repudiandae voluptatem optio! Neque beatae aliquam dolor molestiae praesentium perspiciatis earum cumque
+            optio
+            ullam unde?</p>
+        </div>
+      </div>
+
+      <!-- third faq -->
+      <div class="faq">
+        <div class="question">
+          <h3>What is javaScript ?</h3>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
+          </svg>
+        </div>
+
+        <div class="answer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum, non fugiat obcaecati beatae modi
+            repudiandae voluptatem optio! Neque beatae aliquam dolor molestiae praesentium perspiciatis earum cumque
+            optio
+            ullam unde?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- extra section end -->
+  
+
+  <script>
+
+    const faqs = document.querySelectorAll('.faq')
 
     faqs.forEach((faq) => {
-      faq.addEventListener('click', () => {
+      faq.addEventListener('click', ()=>{
         faq.classList.toggle('active')
       })
     })
+
+
+
+    var childButtons = document.getElementsByClassName('.question');
+
+    // Define a function to handle the click event
+    function handleClick(event) {
+      console.log('Child button clicked');
+      event.stopPropagation(); // Stops the event from propagating to parent elements
+    }
+
+    // Attach the event listener to each element with the class "childButton"
+    for (var i = 0; i < childButtons.length; i++) {
+      childButtons[i].addEventListener('click', handleClick);
+    }
+
+    // Define a function to handle the click event on the parent element
+    document.querySelector('.father').addEventListener('click', function () {
+      console.log('Parent clicked');
+    });
   </script>
 </body>
 

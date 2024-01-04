@@ -5,13 +5,19 @@
     padding: 0;
 }
 
-.navber {
+#navber {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #614DD1;;
+    box-sizing: border-box;
+    transition: 0.5s;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    position: relative;
-    padding: 20px 200px 0px 200px;
+    padding: 20px 200px 20px 200px;
 }
 
 .home-course {
@@ -44,7 +50,7 @@
     margin-right: 20px;
 }
 
-.dropdown img{
+.dropdown img {
     cursor: pointer;
 }
 
@@ -73,7 +79,10 @@
     background-color: #003CA7;
 }
 
-.show {display: block;}
+.show {
+    display: block;
+}
+
 /* profile menu end */
 
 .bollet {
@@ -103,8 +112,18 @@
     text-decoration-line: none;
 }
 
-.ankor-mg{
+.ankor-mg {
     margin-right: 25px;
+}
+
+.ankor-mg:hover {
+    border-bottom: 4px solid tomato;
+    padding-bottom: 5px;
+}
+
+.coaching-b:hover {
+    border-bottom: 4px solid tomato;
+    padding-bottom: 5px;
 }
 
 /* slider section start */
@@ -122,7 +141,7 @@ body {
 .bg-container {
     background-image: url('../image/banner-img.png');
     background-repeat: no-repeat;
-    background-position:top;
+    background-position: top;
     top: 0;
     /* position: absolute; */
     width: 100%;
@@ -155,7 +174,7 @@ header {
 .banner-section {
     width: 876px;
     color: white;
-    padding: 85px 200px 0px 200px;
+    padding: 170px 200px;
 }
 
 .main-title {
@@ -270,23 +289,24 @@ header {
 /* collapse section start */
 
 /* arrow section start */
-.question{
+.question {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.question.active svg{
+.question.active svg {
     transform: rotate(180deg);
 }
 
-svg{
+svg {
     transition: transform .5s ease-in;
 }
 
-.nested-b.active svg{
+.nested-b.active svg {
     transform: rotate(180deg);
 }
+
 /* arrow section end */
 /* collapse-color */
 .collapse-color {
@@ -327,6 +347,10 @@ svg{
 }
 
 /* nested collapse start */
+.expand-cursor {
+    cursor: pointer;
+}
+
 .nested-b {
     display: flex;
     align-items: center;
@@ -400,7 +424,7 @@ svg{
     justify-content: space-between;
 }
 
-.about-skill-section{
+.about-skill-section {
     margin-top: 80px;
 }
 
@@ -508,12 +532,12 @@ svg{
 }
 
 /* extra card section start*/
-.wrapper{
+.wrapper {
     margin-top: 50px;
     position: relative;
 }
 
-.wrapper i{
+.wrapper i {
     height: 50px;
     width: 50px;
     background: #fff;
@@ -528,14 +552,15 @@ svg{
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.wrapper i:first-child{
+.wrapper i:first-child {
     left: -22px;
 }
-.wrapper i:last-child{
+
+.wrapper i:last-child {
     right: -22px;
 }
 
-.wrapper .carousel{
+.wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -546,27 +571,27 @@ svg{
     scrollbar-width: 0;
 }
 
-.carousel :where(.card, .img){
+.carousel :where(.card, .img) {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.carousel::-webkit-scrollbar{
+.carousel::-webkit-scrollbar {
     display: none;
 }
 
-.carousel.dragging{
+.carousel.dragging {
     scroll-behavior: auto;
     scroll-snap-type: none;
 }
 
-.carousel.dragging .card{
+.carousel.dragging .card {
     cursor: grab;
-    user-select: none ;
+    user-select: none;
 }
 
-.carousel .card{
+.carousel .card {
     text-align: center;
     /* width: 280px; */
     border-radius: 10px;
@@ -602,13 +627,13 @@ svg{
     border: 4px solid #fff;
 } */
 
-.card h2{
+.card h2 {
     font-weight: 500px;
     font-size: 1.56rem;
     margin: 30px 0 5px;
 }
 
-.card span{
+.card span {
     color: #6a6d78;
     font-size: 1.31rem;
 }
@@ -751,11 +776,12 @@ svg{
 
 /* responsive for mobile device */
 @media screen and (min-width: 350px) and (max-width: 992px) {
-    .navber {
+    #navber {
         display: flex;
         gap: 50px;
         align-items: center;
         text-align: center;
+        position: relative;
         justify-content: space-between;
         padding: 10px 20px 0px 15px;
     }
@@ -785,7 +811,7 @@ svg{
         display: none;
     }
 
-    .main-btn{
+    .main-btn {
         width: 50%;
         margin-top: 10px;
         margin-left: 0px;
@@ -796,6 +822,7 @@ svg{
         border: none;
         cursor: pointer;
     }
+
     .second-btn {
         width: 74%;
         margin-top: 10px;
@@ -869,7 +896,7 @@ svg{
         padding: 85px 20px 0px 20px;
     }
 
-    .bg-container{
+    .bg-container {
         min-height: 500px;
     }
 
@@ -901,7 +928,7 @@ svg{
         box-shadow: 0 0px 0px 0px, 0 0px 0px 0px;
     }
 
-    .icon-section{
+    .icon-section {
         margin-top: 20px;
     }
 
@@ -936,7 +963,7 @@ svg{
         margin-top: 50px;
     }
 
-    .about-skill-section{
+    .about-skill-section {
         margin-top: 30px;
     }
 
@@ -1017,7 +1044,7 @@ svg{
         padding: 30px;
     }
 
-   
+
 
     .review-form-section {
         padding-bottom: 60px;
@@ -1055,7 +1082,7 @@ svg{
 
     .learn-img {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 35px;
         margin-left: 30px;
         margin-right: 30px;
@@ -1103,7 +1130,7 @@ svg{
 }
 
 /*  responsive for medium device  */
-@media screen and (min-width: 992px) and (max-width: 1024px){
+@media screen and (min-width: 992px) and (max-width: 1024px) {
 
     .banner-section {
         max-width: 876px;
@@ -1112,7 +1139,7 @@ svg{
         padding: 85px 0px 0px 50px;
     }
 
-    .navber {
+    #navber {
         display: flex;
         align-items: center;
         text-align: center;
@@ -1142,7 +1169,7 @@ svg{
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     }
 
-    .main-padding{
+    .main-padding {
         padding: 20px 50px 0px 50px;
     }
 
@@ -1154,11 +1181,11 @@ svg{
         right: 100px;
     }
 
-    .bollet-1{
+    .bollet-1 {
         left: 0;
     }
 
-    .review-form-section{
+    .review-form-section {
         padding-bottom: 50px;
     }
 
@@ -1181,14 +1208,15 @@ svg{
         right: -20px;
     }
 
-    .bollet-1{
+    .bollet-1 {
         left: 10px;
     }
-    .bollet-2{
+
+    .bollet-2 {
         right: 10px;
     }
 
-    .about-main{
+    .about-main {
         margin-top: 70px;
     }
 
@@ -1215,6 +1243,7 @@ svg{
         grid-auto-columns: calc((100% / 2) - 12px);
     }
 }
+
 @media screen and (max-width : 600px) {
     .wrapper .carousel {
         grid-auto-columns: 100%;
