@@ -1,78 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 *{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
 body{
-    background: #CBD8FA;
-}
-
-section{
-    min-height: 100vh;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title{
-    font-size: 3rem;
-    margin: 2rem 0rem;
-}
-
-.faq{
+    background: #ddd;
     max-width: 700px;
-    margin-top: 2rem;
-    padding: 1rem;
+    margin: 20px auto;
+}
+
+.container .heading{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .accordion-container{
+    padding: 0 20px;
+}
+
+.container .accordion-container .accordion{
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
-.question{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* active class */
+.container .accordion-container .accordion.active .accordion-heading{
+    background: crimson;
 }
 
-.question h3{
-    font-size: 1.8rem;
+.container .accordion-container .accordion.active .accordion-heading h3{
+    color: #fff;
 }
 
-.answer p{
-    padding-top: 1rem;
-    line-height: 1.6;
-    font-size: 1.4rem;
+.container .accordion-container .accordion.active .accordion-heading svg{
+    color: #fff;
+    transform: rotate(180deg);
+    transition: transform .2s .1s;
 }
 
-.answer{
-    max-height: 0;
-    overflow: hidden;
-}
-
-.faq.active .answer{
-    max-height: 300px;
-}
-
-/* .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-} */
-
-/* .panel {
-    padding: 0px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-} */
-
-/* .panel.active{
+.container .accordion-container .accordion.active .accordion-content{
     display: block;
-} */
+}
+
+.container .accordion-container .accordion .accordion-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    padding: 15px 20px;
+}
+
+.container .accordion-container .accordion .accordion-heading h3{
+    font-size: 25px;
+}
+
+.container .accordion-container .accordion .accordion-content{
+    padding: 15px 20px;
+    border: 2px solid #000;
+    font-size: 15px;
+    background: #fff;
+    border: 0;
+    display: none;
+    animation: animate .2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+
+svg{
+    width: 20px;
+}
+
+@keyframes animate {
+    0%{
+        transform: scaleY(0);
+    }
+}
+
+
+/* nested content here */
+
+.nested-accordion-content{
+    padding: 15px 20px;
+    border: 2px solid #000;
+    font-size: 15px;
+    background: #fff;
+    border: 0;
+    display: none;
+    animation: animate .2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+
+.nested-accordion-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #fff;
+    padding: 15px 20px;
+}
+
+/* nested active class */
+.nested-accordion.active .nested-accordion-content{
+    display: block;
+}
+
+.nested-accordion.active .nested-accordion-heading svg{
+    color: #fff;
+    transform: rotate(180deg);
+    transition: transform .2s .1s;
+}

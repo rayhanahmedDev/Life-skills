@@ -5,184 +5,241 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/example.css">
-  <title>Nested</title>
+  <title>Accordion</title>
 </head>
 
 <body>
-<div>
-    <h3 class="accordion">Section 1</h3>
-    <p>hello</p>
-    <div class="panel">
+  <div class="container">
+    <h1 class="heading">FAQ</h1>
 
-      <h3 class="accordion">SubSection 1</h3>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
-          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
-          rem
-          magni perspiciatis dolorum?</p>
+    <div class="accordion-container">
+
+      <button id="expandCollapseAllButton">Expand All</button>
+      <!-- accordion 01 -->
+      <div class="accordion active">
+        <div class="accordion-heading">
+          <h3>Accordion Heading 01</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </div>
+
+        <!-- nested accordion -->
+        <div class="accordion-content">
+
+          <!-- 1st nested accordion start -->
+          <div class="nested-accordion">
+            <div class="nested-accordion-heading">
+              <h3>Nested Accordion Heading 01</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+              </svg>
+            </div>
+
+            <!-- nested accordion -->
+            <div class="nested-accordion-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quod!</p>
+            </div>
+          </div>
+          <!-- 1st nested accordion end -->
+
+          <!-- 2nd nested accordion start -->
+          <div class="nested-accordion">
+            <div class="nested-accordion-heading">
+              <h3>Nested Accordion Heading 02</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+              </svg>
+            </div>
+
+            <!-- nested accordion -->
+            <div class="nested-accordion-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quod!</p>
+            </div>
+          </div>
+          <!-- 2nd nested accordion end -->
+
+          <!-- 3rd nested accordion start -->
+          <div class="nested-accordion">
+            <div class="nested-accordion-heading">
+              <h3>Nested Accordion Heading 03</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+              </svg>
+            </div>
+
+            <!-- nested accordion -->
+            <div class="nested-accordion-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quod!</p>
+            </div>
+          </div>
+          <!-- 3rd nested accordion end -->
+        </div>
       </div>
 
-      <h3 class="accordion">SubSection 2</h3>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
-          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
-          rem
-          magni perspiciatis dolorum?</p>
+      <!-- accordion 02 -->
+      <div class="accordion">
+        <div class="accordion-heading">
+          <h3>Accordion Heading 02</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </div>
+        <p class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium temporibus eveniet magnam, rerum velit
+          iusto hic sint. Enim consequatur aliquam vel necessitatibus.
+        </p>
       </div>
+
+      <!-- accordion 03 -->
+      <div class="accordion">
+        <div class="accordion-heading">
+          <h3>Accordion Heading 03</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </div>
+        <p class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium temporibus eveniet magnam, rerum velit
+          iusto hic sint. Enim consequatur aliquam vel necessitatibus.
+        </p>
+      </div>
+
+      <!-- accordion 04 -->
+      <div class="accordion">
+        <div class="accordion-heading">
+          <h3>Accordion Heading 04</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </div>
+        <p class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium temporibus eveniet magnam, rerum velit
+          iusto hic sint. Enim consequatur aliquam vel necessitatibus.
+        </p>
+      </div>
+
+      <!-- accordion 05 -->
+      <div class="accordion">
+        <div class="accordion-heading">
+          <h3>Accordion Heading 05</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </div>
+        <p class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium temporibus eveniet magnam, rerum velit
+          iusto hic sint. Enim consequatur aliquam vel necessitatibus.
+        </p>
+      </div>
+
+      <!-- accordion 06 -->
+      <div class="accordion">
+        <div class="accordion-heading">
+          <h3>Accordion Heading 06</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </div>
+        <p class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium temporibus eveniet magnam, rerum velit
+          iusto hic sint. Enim consequatur aliquam vel necessitatibus.
+        </p>
+      </div>
+
     </div>
-
-    <h3 class="accordion">Section 2</h3>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum itaque alias quasi! Quae eligendi
-        explicabo voluptatibus delectus voluptatem odit at nam, sequi quidem. Quaerat inventore quam commodi tenetur
-        ullam?</p>
-
-
-      <h3 class="accordion">SubSection 2</h3>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
-          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
-          rem
-          magni perspiciatis dolorum?</p>
-      </div>
-    </div>
-
-    
-    <h3 class="accordion">Section 3</h3>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum itaque alias quasi! Quae eligendi
-        explicabo voluptatibus delectus voluptatem odit at nam, sequi quidem. Quaerat inventore quam commodi tenetur
-        ullam?</p>
-
-      
-      <h3 class="accordion">SubSection 3</h3>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam molestias odit est veniam,
-          reiciendis provident aliquam consequuntur molestiae dolorem quasi aliquid, labore nihil? Aperiam laudantium
-          rem
-          magni perspiciatis dolorum?</p>
-      </div>
-    </div>
-
   </div>
-  <!-- javascript section -->
-  <!-- <script>
-
-    let accordion = document.getElementsByClassName('accordion')
-
-    for (i = 0; i < accordion.length; i++) {
-      accordion[i].addEventListener('click', function () {
-        this.classList.toggle('active')
-        var panel = this.nextElementSibling;
-        if (panel.style.display === 'block') {
-          panel.style.display = 'none'
-        } else {
-          panel.style.display = 'block'
-        }
-      })
-    }
-
-
-    // function myFunction() {
-    //   var element = document.querySelector(".panel");
-    //   element.classList.toggle("active");
-    // }
-  </script> -->
-
-  <!-- extra section start -->
-
-  <section>
-    <h2 class="title">FAQ</h2>
-
-    <div class="father">
-      <!-- first faq -->
-      <div class="faq">
-        <div class="question">
-          <h3>What is javaScript ?</h3>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
-          </svg>
-        </div>
-
-        <div class="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum, non fugiat obcaecati beatae modi
-            repudiandae voluptatem optio! Neque beatae aliquam dolor molestiae praesentium perspiciatis earum cumque
-            optio
-            ullam unde?</p>
-        </div>
-      </div>
-
-      <!-- second faq -->
-      <div class="faq">
-        <div class="question">
-          <h3>What is javaScript ?</h3>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
-          </svg>
-        </div>
-
-        <div class="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum, non fugiat obcaecati beatae modi
-            repudiandae voluptatem optio! Neque beatae aliquam dolor molestiae praesentium perspiciatis earum cumque
-            optio
-            ullam unde?</p>
-        </div>
-      </div>
-
-      <!-- third faq -->
-      <div class="faq">
-        <div class="question">
-          <h3>What is javaScript ?</h3>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-            <path d="M1 1L7.73494 7L14 1.00001" stroke="#614DD1" stroke-width="2" />
-          </svg>
-        </div>
-
-        <div class="answer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum, non fugiat obcaecati beatae modi
-            repudiandae voluptatem optio! Neque beatae aliquam dolor molestiae praesentium perspiciatis earum cumque
-            optio
-            ullam unde?</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- extra section end -->
-  
 
   <script>
 
-    const faqs = document.querySelectorAll('.faq')
+    let accordions = document.querySelectorAll('.accordion')
 
-    faqs.forEach((faq) => {
-      faq.addEventListener('click', ()=>{
-        faq.classList.toggle('active')
-      })
+    accordions.forEach(acco => {
+      acco.onclick = (event) => {
+        event.stopPropagation();
+        let content = acco.querySelector('.accordion-content');
+
+        // Check if this accordion has nested content
+        let nestedContent = content.querySelector('.nested-accordion-content');
+        if (nestedContent) {
+          // If there's nested content, close it first
+          let nestedAccordions = content.querySelectorAll('.nested-accordion');
+          nestedAccordions.forEach(nest => {
+            nest.classList.remove('active');
+          });
+        }
+
+        // Toggle active class for the clicked accordion
+        if (acco.classList.contains('active')) {
+          acco.classList.remove('active')
+
+        } else {
+          acco.classList.add('active')
+        }
+      }
+
+      let content = acco.querySelector('.accordion-content');
+      content.onclick = (event) => {
+        event.stopPropagation(); // Prevents event from bubbling up the DOM tree
+      };
     })
 
+    // nested accordion content
+    let nestedAccordion = document.querySelectorAll('.nested-accordion')
 
+    nestedAccordion.forEach(nest => {
+      nest.onclick = () => {
+        if (nest.classList.contains('active')) {
+          nest.classList.remove('active')
 
-    var childButtons = document.getElementsByClassName('.question');
+        } else {
+          nest.classList.add('active')
+        }
+      }
+    })
 
-    // Define a function to handle the click event
-    function handleClick(event) {
-      console.log('Child button clicked');
-      event.stopPropagation(); // Stops the event from propagating to parent elements
+    // expand all section
+    function toggleAll() {
+      let allExpanded = true; // Flag to check if all accordions are expanded
+      let accordions = document.querySelectorAll('.accordion');
+      accordions.forEach(acco => {
+        if (!acco.classList.contains('active')) {
+          allExpanded = false;
+        }
+      });
+
+      // If at least one accordion is not expanded, expand all; otherwise, collapse all
+      if (!allExpanded) {
+        accordions.forEach(acco => {
+          acco.classList.add('active');
+          let nestedAccordions = acco.querySelectorAll('.nested-accordion');
+          nestedAccordions.forEach(nest => {
+            nest.classList.add('active');
+          });
+        });
+      } else {
+        accordions.forEach(acco => {
+          acco.classList.remove('active');
+          let nestedAccordions = acco.querySelectorAll('.nested-accordion');
+          nestedAccordions.forEach(nest => {
+            nest.classList.remove('active');
+          });
+        });
+      }
     }
 
-    // Attach the event listener to each element with the class "childButton"
-    for (var i = 0; i < childButtons.length; i++) {
-      childButtons[i].addEventListener('click', handleClick);
-    }
-
-    // Define a function to handle the click event on the parent element
-    document.querySelector('.father').addEventListener('click', function () {
-      console.log('Parent clicked');
-    });
+    document.getElementById('expandCollapseAllButton').addEventListener('click', toggleAll);
   </script>
+
 </body>
 
 </html>

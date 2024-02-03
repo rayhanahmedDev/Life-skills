@@ -30,7 +30,7 @@ const dragStart = (e) => {
 }
 
 const dragging = (e) => {
-    if(!isDragging) return;
+    if (!isDragging) return;
     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 }
 
@@ -42,3 +42,85 @@ const dragStop = () => {
 carousel.addEventListener("mousedown", dragStart)
 carousel.addEventListener("mousemove", dragging)
 document.addEventListener("mouseup", dragStop)
+
+
+
+// accordion section
+
+let accordions = document.querySelectorAll('.accordion')
+
+accordions.forEach(acco => {
+    acco.onclick = (event) => {
+        event.stopPropagation();
+        let content = acco.querySelector('.accordion-content');
+
+        // Check if this accordion has nested content
+        let nestedContent = content.querySelector('.nested-accordion-content');
+        if (nestedContent) {
+            // If there's nested content, close it first
+            let nestedAccordions = content.querySelectorAll('.nested-accordion');
+            nestedAccordions.forEach(nest => {
+                nest.classList.remove('active');
+            });
+        }
+
+        // Toggle active class for the clicked accordion
+        if (acco.classList.contains('active')) {
+            acco.classList.remove('active')
+
+        } else {
+            acco.classList.add('active')
+        }
+    }
+
+    let content = acco.querySelector('.accordion-content');
+    content.onclick = (event) => {
+        event.stopPropagation(); // Prevents event from bubbling up the DOM tree
+    };
+})
+
+// nested accordion content
+let nestedAccordion = document.querySelectorAll('.nested-accordion')
+
+nestedAccordion.forEach(nest => {
+    nest.onclick = () => {
+        if (nest.classList.contains('active')) {
+            nest.classList.remove('active')
+
+        } else {
+            nest.classList.add('active')
+        }
+    }
+})
+
+// expand all section
+function toggleAll() {
+    let allExpanded = true; // Flag to check if all accordions are expanded
+    let accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(acco => {
+        if (!acco.classList.contains('active')) {
+            allExpanded = false;
+        }
+    });
+
+    // If at least one accordion is not expanded, expand all; otherwise, collapse all
+    if (!allExpanded) {
+        accordions.forEach(acco => {
+            acco.classList.add('active');
+            let nestedAccordions = acco.querySelectorAll('.nested-accordion');
+            nestedAccordions.forEach(nest => {
+                nest.classList.add('active');
+            });
+        });
+    } else {
+        accordions.forEach(acco => {
+            acco.classList.remove('active');
+            let nestedAccordions = acco.querySelectorAll('.nested-accordion');
+            nestedAccordions.forEach(nest => {
+                nest.classList.remove('active');
+            });
+        });
+    }
+}
+
+document.getElementById('expandCollapseAllButton').addEventListener('click', toggleAll);
