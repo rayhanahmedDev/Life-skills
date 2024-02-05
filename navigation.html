@@ -67,9 +67,26 @@
         color: #333;
         font-size: 1.05em;
        }
+
+       /* scroll bar  */
+       #bar{
+        height: 10px;
+        transition: all linear .2s;
+        background-color: red;
+        box-shadow: 0 0 10px 0 #fff;
+        border-radius: 10px;
+        position: sticky;
+        top: 0;
+       }
+
+       ::-webkit-scrollbar{
+        width: 0px;
+       }
+
     </style>
 </head>
 <body>
+    
     <nav id="navber">
         <a href="#" class="brand">Brand Name</a>
         <ul>
@@ -80,7 +97,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-
+    <div id="bar"></div>
     <!-- banner section -->
     <section>
         <h1>Scroll Aware Navigation Bar <br> <span>Hide Header On Scroll Down, Show on Scroll up</span></h1>
@@ -104,6 +121,15 @@
                 navber.style.top = '0'
             }
             lastScrollTop = scrollTop
+        })
+
+        // top scroll bar
+        let fullHeight = document.body.scrollHeight-window.innerHeight
+
+        window.addEventListener('scroll', function() {
+            scr = pageYOffset
+            progress = (scr/fullHeight) * 100
+            document.getElementById('bar').style.width= `${progress}vw`
         })
     </script>
 </body>

@@ -17,7 +17,23 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    padding: 20px 200px 20px 200px;
+    padding: 29px 200px 20px 200px;
+}
+
+/* scroll bar  */
+#bar {
+    width: 0vw;
+    height: 7px;
+    transition: all linear .2s;
+    background-color: #EB5757;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 
@@ -137,6 +153,11 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 .bg-container {
@@ -784,7 +805,7 @@ svg {
 
 .footer-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .des-color {
@@ -819,13 +840,30 @@ svg {
 
 .copy-right {
     background: #1E2431;
-    padding: 40px;
+    padding: 20px 0;
     color: white;
     text-align: center;
+    border-top: 1px solid #2B2D32;
 }
 
 .right-color {
     color: #EB5757;
+}
+
+#mybtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    border: none;
+    background-color: #f23333;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
 }
 
 
@@ -901,13 +939,13 @@ svg {
         text-align: center;
     }
 
-    .links img{
+    .links img {
         transform: translateY(-50px);
         transition: .2s ease;
         opacity: 0;
     }
 
-    .links button{
+    .links button {
         transform: translateY(-50px);
         transition: .2s ease;
         opacity: 0;
@@ -1236,6 +1274,10 @@ svg {
     .footer-links {
         flex-wrap: wrap;
     }
+
+    .footer-links {
+        justify-content: space-evenly;
+    }
 }
 
 /*  responsive for medium device  */
@@ -1351,10 +1393,18 @@ svg {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 12px);
     }
+
+    .main-img-web-section img {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width : 600px) {
     .wrapper .carousel {
         grid-auto-columns: 100%;
+    }
+
+    .main-img-web-section img {
+        width: 300px;
     }
 }
