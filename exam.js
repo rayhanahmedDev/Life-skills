@@ -126,11 +126,17 @@ function toggleAll() {
 document.getElementById('expandCollapseAllButton').addEventListener('click', toggleAll);
 
 // top scroll bar
-let fullHeight = document.body.scrollHeight-window.innerHeight
+let fullHeight = document.body.scrollHeight - window.innerHeight
 // console.log(fullHeight);
 
 window.addEventListener('scroll', function () {
     scr = pageYOffset
     progress = (scr / fullHeight) * 100
     document.getElementById('bar').style.width = `${progress}vw`
+})
+
+// loader section
+var loader = document.getElementById('preloader')
+window.addEventListener('load', function () {
+    loader.style.display = 'none'
 })
